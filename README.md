@@ -14,9 +14,9 @@ O **DisasterLink** é um sistema de comunicação de emergência criado para res
 
 ## 💬 Estrutura de navegação
  
-- **Menu Principal** - status em tempo real do sistema, com atalho [D] para carregar um cenário de demonstração pré-configurado.
+- **Menu principal**: status em tempo real do sistema, com atalho [D] para carregar um cenário de demonstração pré-configurado.
 
-- **Módulo 1 - Registro e Triagem de Vítimas**: cadastro de vítimas com score de urgência automático (0–100) calculado por tipo de emergência, horas sem resposta, vulnerabilidade e ferimentos.
+- **Módulo 1 - Registro e triagem de vítimas**: cadastro de vítimas com score de urgência automático (0–100) calculado por tipo de emergência, horas sem resposta, vulnerabilidade e ferimentos.
   | Score | Nível |
   |-------|-------|
   | ≥ 85 | 🔴 CRÍTICO |
@@ -24,7 +24,7 @@ O **DisasterLink** é um sistema de comunicação de emergência criado para res
   | 35–59 | 🟡 MÉDIO |
   | < 35 | 🟢 BAIXO |
   
-- **Módulo 2 - Simulador de Canais de Comunicação**: hierarquia de canais com failover automático.
+- **Módulo 2 - Simulador de canais de comunicação**: hierarquia de canais com failover automático.
   | # | Canal | Latência | Custo | Confiab. |
   |---|-------|----------|-------|----------|
   | 1 | Satélite Iridium SBD | ~90s | US$ 0.04/msg | 95% |
@@ -33,9 +33,9 @@ O **DisasterLink** é um sistema de comunicação de emergência criado para res
   | 4 | Rádio HF | ~5min | Gratuito | 75% |
   | 5 | WiFi Captive Portal | < 1s | Gratuito | 50% |
   
-- **Módulo 3 - Equipes de Resgate e Rotas**: cadastro e despacho de equipes com designação otimizada com vítimas ordenadas por score, equipe mais próxima selecionada via fórmula de Haversine, ETA calculado pela velocidade da equipe. 
+- **Módulo 3 - Equipes de resgate e rotas**: cadastro e despacho de equipes com designação otimizada com vítimas ordenadas por score, equipe mais próxima selecionada via fórmula de Haversine, ETA calculado pela velocidade da equipe. 
 
-- **Módulo 4 - Simulador de Detecção Passiva**: simula sensores autônomos que detectam sobreviventes sem interação.
+- **Módulo 4 - Simulador de detecção passiva**: simula sensores autônomos que detectam sobreviventes sem interação.
   | Sensor | Alcance | Uso |
   |--------|---------|-----|
   | Térmico / IR | 50 m | Noturno / fumaça |
@@ -43,7 +43,7 @@ O **DisasterLink** é um sistema de comunicação de emergência criado para res
   | Radar GPR | 3 m | Sub-superfície |
   | Bluetooth LE | 30 m | Beacon de celular |
   
-### **Módulo 5 - Painel de Controle e Relatórios**: dashboard em tempo real, relatório estatístico (score médio, desvio padrão, distribuição por nível), mapa de calor ASCII geográfico e exportação completa para JSON.
+### **Módulo 5 - Painel de controle e relatórios**: dashboard em tempo real, relatório estatístico (score médio, desvio padrão, distribuição por nível), mapa de calor ASCII geográfico e exportação completa para JSON.
 ---
  
 ## 🔧 Funcionalidades interativas
