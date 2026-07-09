@@ -14,7 +14,7 @@ O **DisasterLink** é um sistema de comunicação de emergência criado para res
 
 ## 💬 Estrutura de navegação
  
-- **Menu Principal**: status em tempo real do sistema, com atalho [D] para carregar um cenário de demonstração pré-configurado.
+- **Menu Principal** - status em tempo real do sistema, com atalho [D] para carregar um cenário de demonstração pré-configurado.
 
 - **Módulo 1 - Registro e Triagem de Vítimas**: cadastro de vítimas com score de urgência automático (0–100) calculado por tipo de emergência, horas sem resposta, vulnerabilidade e ferimentos.
   | Score | Nível |
