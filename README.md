@@ -1,4 +1,4 @@
-# 🌐 DisasterLink 
+# 📊 DisasterLink 
 
 > Projeto desenvolvido como parte da disciplina de Computational Thinking with Python.
 
@@ -14,15 +14,17 @@ O **DisasterLink** é um sistema de comunicação de emergência criado para res
 
 ## 💬 Estrutura de navegação
  
-- **Menu Principal**: status em tempo real do sistema, com atalho **[D]** para carregar um cenário de demonstração pré-configurado
-- **Módulo 1 — Registro e Triagem de Vítimas**: cadastro de vítimas com **score de urgência automático** (0–100) calculado por tipo de emergência, horas sem resposta, vulnerabilidade e ferimentos
+### **Menu Principal**: status em tempo real do sistema, com atalho [D] para carregar um cenário de demonstração pré-configurado.
+
+### **Módulo 1 - Registro e Triagem de Vítimas**: cadastro de vítimas com score de urgência automático (0–100) calculado por tipo de emergência, horas sem resposta, vulnerabilidade e ferimentos.
   | Score | Nível |
   |-------|-------|
   | ≥ 85 | 🔴 CRÍTICO |
   | 60–84 | 🟠 ALTO |
   | 35–59 | 🟡 MÉDIO |
   | < 35 | 🟢 BAIXO |
-- **Módulo 2 — Simulador de Canais de Comunicação**: hierarquia de canais com **failover automático**
+  
+### **Módulo 2 - Simulador de Canais de Comunicação**: hierarquia de canais com failover automático.
   | # | Canal | Latência | Custo | Confiab. |
   |---|-------|----------|-------|----------|
   | 1 | Satélite Iridium SBD | ~90s | US$ 0.04/msg | 95% |
@@ -30,24 +32,27 @@ O **DisasterLink** é um sistema de comunicação de emergência criado para res
   | 3 | 4G/5G | ~2s | R$ 35/mês | 65% |
   | 4 | Rádio HF | ~5min | Gratuito | 75% |
   | 5 | WiFi Captive Portal | < 1s | Gratuito | 50% |
-- **Módulo 3 — Equipes de Resgate e Rotas**: cadastro e despacho de equipes com **designação otimizada** — vítimas ordenadas por score, equipe mais próxima selecionada via fórmula de Haversine, ETA calculado pela velocidade da equipe. Especialidades: Busca e Resgate Terrestre, Atendimento Médico, Combate a Incêndio/USAR, Mergulho/Resgate Aquático, Resgate em Altura
-- **Módulo 4 — Simulador de Detecção Passiva**: simula sensores autônomos que detectam sobreviventes sem interação
+  
+### **Módulo 3 - Equipes de Resgate e Rotas**: cadastro e despacho de equipes com designação otimizada com vítimas ordenadas por score, equipe mais próxima selecionada via fórmula de Haversine, ETA calculado pela velocidade da equipe. 
+
+### **Módulo 4 — Simulador de Detecção Passiva**: simula sensores autônomos que detectam sobreviventes sem interação.
   | Sensor | Alcance | Uso |
   |--------|---------|-----|
   | Térmico / IR | 50 m | Noturno / fumaça |
   | Acústico | 20 m | Escombros |
   | Radar GPR | 3 m | Sub-superfície |
   | Bluetooth LE | 30 m | Beacon de celular |
-- **Módulo 5 — Painel de Controle e Relatórios**: dashboard em tempo real, relatório estatístico (score médio, desvio padrão, distribuição por nível), **mapa de calor ASCII** geográfico e exportação completa para JSON
+  
+### **Módulo 5 — Painel de Controle e Relatórios**: dashboard em tempo real, relatório estatístico (score médio, desvio padrão, distribuição por nível), mapa de calor ASCII geográfico e exportação completa para JSON.
 ---
  
 ## 🔧 Funcionalidades interativas
  
-- Registrar, listar por urgência, atualizar status, pesquisar e exibir ficha completa de vítimas, com equipe designada e ETA
-- Simular transmissão, falha em cascata, custo de operação e comparativo técnico entre canais de comunicação
-- Designar e liberar equipes de resgate, com relatório de atividades
-- Simular detecção térmica, acústica, radar e Bluetooth LE, individualmente ou em varredura combinada
-- Dashboard e relatórios com estatísticas de triagem e mapa de calor de urgência
+- Registrar, listar por urgência, atualizar status, pesquisar e exibir ficha completa de vítimas, com equipe designada e ETA.
+- Simular transmissão, falha em cascata, custo de operação e comparativo técnico entre canais de comunicação.
+- Designar e liberar equipes de resgate, com relatório de atividades.
+- Simular detecção térmica, acústica, radar e Bluetooth LE, individualmente ou em varredura combinada.
+- Dashboard e relatórios com estatísticas de triagem e mapa de calor de urgência.
 - Exportação completa dos dados do sistema para JSON:
 ```json
 {
@@ -91,7 +96,6 @@ Desastre ocorre
 | Python | Lógica do sistema, menus, simulações e cálculos (CLI em Python puro) |
 | Git | Versionamento do projeto |
  
-> Aplicação CLI desenvolvida em **Python puro** — sem dependências externas.
 > Requer Python 3.10+ (uso de `match/case`). Compatível com Linux, macOS e Windows.
  
 ---
