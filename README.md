@@ -43,7 +43,7 @@ O **DisasterLink** é um sistema de comunicação de emergência criado para res
   | Radar GPR | 3 m | Sub-superfície |
   | Bluetooth LE | 30 m | Beacon de celular |
   
-### **Módulo 5 - Painel de controle e relatórios**: dashboard em tempo real, relatório estatístico (score médio, desvio padrão, distribuição por nível), mapa de calor ASCII geográfico e exportação completa para JSON.
+- **Módulo 5 - Painel de controle e relatórios**: dashboard em tempo real, relatório estatístico (score médio, desvio padrão, distribuição por nível), mapa de calor ASCII geográfico e exportação completa para JSON.
 ---
  
 ## 🔧 Funcionalidades interativas
@@ -113,7 +113,7 @@ cd ComputacionalPython-main
 python disasterlink.py
 ```
  
-Ao iniciar, o menu principal exibe o status em tempo real: vítimas registradas, casos críticos, equipes disponíveis e log do sistema. Use **[D]** para carregar um cenário de demonstração pré-configurado.
+Ao iniciar, o menu principal exibe o status em tempo real: vítimas registradas, casos críticos, equipes disponíveis e log do sistema. Use [D] para carregar um cenário de demonstração pré-configurado.
  
 ---
  
